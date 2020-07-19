@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style>
+        body{
+            background: #000;
+        }
+        .box{
+            background: #fff;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: animate1;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+            /* animation-play-state: paused; */
+        }
+        @keyframes animate1{
+            from{
+                top:0px;
+                width: 200px;
+            }
+            to{
+                top: 100px;
+                /* height: 500px;
+                width: 400px; */
+                background: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
