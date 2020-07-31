@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('./images/background.jpg');
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(135deg, hsl(0,0%,100%), hsl(0,100%,98%),hsl(0,80%,86%), hsl(0,74%,74%)) ;
+            min-width: 950px;
+            max-height: 540px;
+            margin:auto;
+            box-shadow: 4px 4px 20px hsl(0, 6%, 24%);
+        }
+        .left{
+            background: url('./images/back.svg') no-repeat center center/cover;
+            flex: 50%;
+            padding-left: 80px;
+            padding-right: 100px;
+            width:600px ;
+        }
+        .left > img{
+            padding-top: 40px;
+            padding-bottom: 90px;
+        }
+        .right{
+            flex: 50%;
+        }
+        .right img{
+            height: 540px;
+            width: 400px
+        }
+        .heading1{
+            color: rgb(207, 137, 137);
+            font-size: 39px;
+        }
+        .heading2{
+            font-size: 25px;
+            padding-bottom: 30px;
+        }
+        .content p{
+            font-weight: lighter;
+            color: rgb(202, 140, 140);
+            line-height: 20px;
+        }
+        .icon-arrow{
+            width: 450px;
+            border-radius: 50px;
+            padding: 5px 20px;
+            background-color: white;
+        }
+        .icon-arrow input{
+            border: hsl(0,80%,86%) solid 2px;
+            width:300px;
+            padding: 5px;
+            border-radius: 50px ;
+        }
+        input:focus , textarea{
+            /* border: hsl(0,80%,86%) solid 2px;
+            border-radius: 50px ; */
+            outline: none !important;
+        }
+        .icon-color{
+            border-radius: 50px;
+            display: inline-block;
+            background: hsl(0, 100%, 73%);
+            padding: 2px 15px;
+        }
+        ::placeholder{
+            color: hsl(0, 100%, 73%);
+        }
+        /* @media (max-width: 500px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+    
+            <div class="left">
+                <img src="./images/logo.svg">
+                <div class="heading1">
+                    <p>W E ' R E</p>
+                </div>
+                <div class="heading2">
+                    <h2>C &nbsp;O &nbsp;M &nbsp;I &nbsp;N &nbsp;G<br>S &nbsp;O &nbsp;O &nbsp;N</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        Hello fellow shoppers! We're currently building our new<br>
+                        fashion store.Add your email below to stay up-to-date with
+                        <br>announcements and our launch deals.
+                    </p>
+                </div>
+                <br><br>
+                <div class="icon-arrow">
+                    <input type="email" id="email" placeholder="Email Address">
+                    <img src="./images/icon-arrow.svg" class="icon-color">
+                </div>
+            </div>
+        
+            <div class="right">
+                    <img src="./images/hero-desktop.jpg" >
+            </div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>
