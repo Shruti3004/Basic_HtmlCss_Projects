@@ -1,0 +1,11 @@
+@media (max-width:500px){
+    body{
+        overflow: hidden;
+    }
+    img{
+        display: none;
+    }
+    .container{
+        max-width: 330px;
+    }
+}
