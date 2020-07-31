@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            /* margin: auto; */
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+        header{
+            margin-top: 10px;
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+        }
+        #navbar{
+            float: right;
+        }
+        #navbar li{
+            display: inline-block;
+            padding: 8px;
+        }
+        #navbar .button-blue{
+            background:rgb(30,30,255);
+            margin-right: 25px;
+            padding: 7px 15px;
+            border-radius: 3px;
+            color: white;
+        }
+        #navbar .button-blue:hover{
+            box-shadow: 1px 1px 5px #999;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 112px;
+            padding-bottom: 20px;
+        }
+        .heading p{
+            font-size: 120px;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .green{
+            color: green;
+        }
+        input{
+            font-size: 16px;
+            border-radius: 20px;
+            margin: 0 460px;
+            margin-bottom: 30px;
+            width: 450px;
+            line-height:20px;
+            padding: 5px 10px;
+            border: none;
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            width: auto;
+        }
+        .btn{
+            border: none;
+            cursor: pointer;
+            padding: 10px 25px;
+            color: black;
+            font-size: 14px;
+            background:rgba(240, 237, 237, 0.932);
+            margin-right: 20px;
+            border-radius: 3px;
+        }
+        footer{
+            background: #f2f2f2;
+            border-top: solid 2px #e4e4e4;
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 0;
+            width: 100%;
+        }
+        footer ul{
+            float: left;
+        }
+        footer ul li{
+            display: inline-block;
+            color: #666666;
+            font-size: 14px;
+            padding: 10px;
+        }
+        footer .footer-right{
+            float: right;
+        }
+        footer ul a:hover{
+            text-decoration: underline;
+        }
+
+        /* .button-blue{
+            background: rgb(30, 30, 255);
+            color: white;
+            width: ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="google">
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li>Gmail</li>
+                    <li>Images</li>
+                    <li><i fa fa-th fa-lg></i></li>
+                    <li class="button-blue">Sign in</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="heading">
+            <p><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></p>
+        </div>
+
+        <div class="form-search">
+            <label for="form-search"></label>
+            <input type="text" id="form-search" name="search" placeholder="Search or type web addresss">
+        </div>
+
+        <div class="buttons">
+            <button class="btn">Google Search</button>
+            <button class="btn">I'm feeling lucky</button>
+        </div>
+
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-right">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Use Google.com</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
