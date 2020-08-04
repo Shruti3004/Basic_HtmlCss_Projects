@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="process.php">
+        <!-- TEXT -->
+        <div>
+            <!-- value of for and id should be same -->
+            <!-- this name attribute has some link with server side -->
+            <label for="name">NAME</label><br>
+            <!-- sometimes we want to provide some value so we can do that by using value attribute -->
+            <!-- NOTE value attribute is different from placeholder attribute -->
+            <input type="text" id="name" name="name" value="Shruti Agarwal" pattern="[ABCDEF]">
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+            <label for="email">EMAIL</label><br>
+            <!-- placeholder attribute is for display the default message  -->
+            <input type="email" id="email" name="email" placeholder="Enter an Email">
+        </div>
+
+        <!-- MESSAGE -->
+        <div>
+            <!-- we use textarea tag here because it is different from that text message needs more space than 
+            writing the text of simple name -->
+            <!-- if we have to make the message box bigger then: if we want to make it horizontally bigger than
+            we will use column attribute and if we want to vertically bigger than we will use row attribute -->
+            <label for="message">MESSAGE</label><br>
+            <textarea id="message" name="message" cols="50" rows="10"></textarea>
+        </div>
+
+        <!-- SELECT OPTION (SEX) -->
+        <div>
+            <label for="sex">SEX</label><br>
+            <select name="sex" id="sex">
+                <option value="male">male</option>
+                <!-- if we want anyting to be by default selected so we can also do that -->
+                <option value="female" selected>female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+
+        <!-- NUMBER -->
+        <div>
+            <label for="age">AGE</label><br>
+            <!-- by writing input:number and pressing enter it will automatically display  -->
+            <input type="number" name="age" id="age" >
+        </div>
+
+        <!-- DATE -->
+        <div>
+            <label for="birthdate">BIRTHDATE</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+        <!-- RADIO TYPE -->
+        <div>
+            <label for="membership">MEMBERSHIP</label><br>
+            <input type="radio" name="membership" id="membership" value="simple">Simple
+            <input type="radio" name="membership" id="membership" value="standard" checked>Standard
+            <input type="radio" name="membership" id="membership" value="super">Super
+        </div>
+
+        <!-- CHECKBOX -->
+        <div>
+            <label for="hobbies">HOBBIES</label><br>
+            <!-- we can select the multiple same names by pressing ctrl+D for example selecting checkbox and then
+            press ctrl+D  -->
+            <!-- difference between checkbox and radio is that we can tick multiple options by using checkbox -->
+            <input type="checkbox" name="hobbies" id="hobbies" value="playing">playing
+            <input type="checkbox" name="hobbies" id="hobbies" value="drawing" checked>drawing
+            <input type="checkbox" name="hobbies" id="hobbies" value="dancing">dancing
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" value="submit">
+        <!-- we can also use button tag -->
+        <!-- <button type="submit">Submit</button> -->
+        <!-- it will reset the form -->
+        <button type="reset">RESET</button>
+
+    </form>
+</body>
+</html>

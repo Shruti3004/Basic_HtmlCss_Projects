@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .box{
+            background:white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: animate1;
+            animation-duration: 2s;
+            /* By default animation takes place one time  */
+            animation-iteration-count: 2;
+            /* if we want to hold the animation at its last place */
+            animation-fill-mode: forwards;
+            /* Motion can also be delayed */
+            animation-delay: 2s;
+            animation-direction: alternate;
+            /* it will tell the pattern of motion like ease-in is slow at starting and and slow at ending whereas ease-out do reverse */
+            animation-timing-function: ease-in;
+            /* we can write this in one line too */
+            /* name | duration | fill-mode | delay | timing-function  */
+            animation: animate1 5s forwards 2s ease-in;
+        }
+        @keyframes animate1 {
+            from{
+                top: 0;
+                width: 200px;
+            }
+            to{
+                background: red;
+                top: 200px;
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+</body>
+</html>

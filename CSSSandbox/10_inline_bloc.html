@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        li{
+            /* li is basically a block level element to convert inline we will use this */
+            display: inline;
+        }
+        li a{
+            font-size: 20px;
+            padding-right:20px;
+        }
+        /* Now to convert the inline element to block level element as img is a inline element */
+        img{
+            /* margin:auto wwont work if it doesnt was a block level element   */
+            display: block;
+            margin:auto;
+        }
+        .box{
+            width:32%;
+            box-sizing:border-box;
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 20px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+    <br><br>
+    <img src="./Doraemon_renderImproved.png">
+    <br><br>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam omnis voluptatibus tempora eligendi quos. Obcaecati quae repellat commodi, dolor eligendi quibusdam, nostrum quis tempore atque error reprehenderit amet cum officia.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam omnis voluptatibus tempora eligendi quos. Obcaecati quae repellat commodi, dolor eligendi quibusdam, nostrum quis tempore atque error reprehenderit amet cum officia.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam omnis voluptatibus tempora eligendi quos. Obcaecati quae repellat commodi, dolor eligendi quibusdam, nostrum quis tempore atque error reprehenderit amet cum officia.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="blog.html" class="current">ADD BLOG</a></li>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+    <div id="main-container">
+        <div class="form-container">
+            <form>
+                <div class="input-field1">
+                    <label for="name"></label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[a-z]{6}">
+                </div>
+                <div class="input-field">
+                    <label for="lastname"></label><br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter the title" pattern="[A-Za-z]">
+                </div>
+                <div class="input-field">
+                    <label for="message"></label><br>
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter your text here"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn">ADD BLOG</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

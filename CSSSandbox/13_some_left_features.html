@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Features</title>
+    <style>
+        /* specific class is having more precedence than element otherwise the precedence takes place to the in the order which comes at last */
+        .hello{
+            color: crimson;
+        }
+        h1{
+            /* this feature enables to activate that feature */
+            /* display: none; */
+            /* this feature now hide the things but will take up the space */
+            /* visibility: hidden; */
+            /* !important has a lott of precdence it will overwrite  */
+            color:blue !important;
+            margin-top: -30px;
+            margin-left: -30px;
+            /* Negative values doesnt work with padding because it is inside the border */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, minima!</p>
+</body>
+</html>

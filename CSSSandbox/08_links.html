@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a{
+            color:slateblue;
+            /* to remove the underline below the text */
+            text-decoration: none;
+        }
+        /* Pseudo Selector */
+        /* it will change the link format when cursor comes to it */
+        a:hover{
+            color:coral;
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        /* a:visited{
+            color:black;
+        } */
+        a:active{
+            color:red;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn{
+            background: #4c6ca0;
+            border-radius: 5px;
+            color: white;
+            border:none;
+            padding: 10px 20px;
+            font-size: 18px;
+            /* with button our cursor will not change in the pointer but we can even do that */
+            cursor: pointer;
+        }
+        .btn:hover{
+            color:white;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <a href="#" class="btn">Click Here</a>
+    <br>
+    <br>
+    <button class="btn">My Button</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <!-- we can check the fonts from fontsgoogle.com -->
+    <!-- serif text is little pointed at edges whereas sans is flattened at edges -->
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            /* by default the font size is 16px {1px=1/96thofin} */
+            font-size:18px;
+            /* em is the unit which is the multiplication of size of parent element as in whatever be the size
+            right now it is 18 px */
+            /* rem is the unit which is the multiplication of size of root element as in by default it is 16 px */
+            line-height:1.6em;
+        }
+        #welcome p span{
+            color:darkred;
+            font-weight:bold;
+        }
+        #about p span{
+            color:darkred;
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 id="primary-heading">WELCOME</h2>
+        <p>Lorem ipsum dolor sit <span>amet, consectetur adipisicing elit.</span> Dolorum doloremque reiciendis recusandae atque voluptatem maxime quidem tenetur incidunt suscipit nostrum, praesentium assumenda dolor aspernatur! Culpa voluptatibus accusantium omnis perspiciatis fugiat nesciunt voluptates sed corporis, soluta doloribus ex? Voluptatem cupiditate quasi corporis qui enim itaque ratione ipsum nesciunt. Quo, numquam animi?</p>
+    </div>
+    <div id="about">
+        <h2 class="blue-heading">ABOUT</h2>
+        <p>Lorem ipsum dolor sit amet,<span> consectetur adipisicing elit. Dolorum doloremque reiciendis</span> recusandae atque voluptatem maxime quidem tenetur incidunt suscipit nostrum, praesentium assumenda dolor aspernatur! Culpa voluptatibus accusantium omnis perspiciatis fugiat nesciunt voluptates sed corporis, soluta doloribus ex? Voluptatem cupiditate quasi corporis qui enim itaque ratione ipsum nesciunt. Quo, numquam animi?</p>
+    </div>
+</body>
+</html>
+    

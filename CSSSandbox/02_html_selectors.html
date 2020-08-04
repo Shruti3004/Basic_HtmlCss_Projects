@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* if we will not add ids so all the h2 becomes green but by adding id we can point on indvidual */
+        /* # is for ids */
+        #primary-heading{
+            color:green;
+        }
+        /* . is for classes */
+        .blue-heading{
+            color:blue;
+        }
+        #welcome{
+            background-color:aquamarine;
+        }
+        /* MULTIPLE SELECTORS */
+        #welcome, #about{
+            border:2px solid blue;
+            padding:10px;
+            margin-bottom:5px;
+        }
+        /* NESTED SELECTORS */
+        #welcome p{
+            /* by default font isze is 16px  */
+            font-size:20px;
+        }
+        /* BODY STYLING */
+        body{
+            background-color: darkgrey ;
+        }
+        #about{
+            color:darkred;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 id="primary-heading">WELCOME</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum doloremque reiciendis recusandae atque voluptatem maxime quidem tenetur incidunt suscipit nostrum, praesentium assumenda dolor aspernatur! Culpa voluptatibus accusantium omnis perspiciatis fugiat nesciunt voluptates sed corporis, soluta doloribus ex? Voluptatem cupiditate quasi corporis qui enim itaque ratione ipsum nesciunt. Quo, numquam animi?</p>
+    </div>
+    <div id="about">
+        <h2 class="blue-heading">ABOUT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum doloremque reiciendis recusandae atque voluptatem maxime quidem tenetur incidunt suscipit nostrum, praesentium assumenda dolor aspernatur! Culpa voluptatibus accusantium omnis perspiciatis fugiat nesciunt voluptates sed corporis, soluta doloribus ex? Voluptatem cupiditate quasi corporis qui enim itaque ratione ipsum nesciunt. Quo, numquam animi?</p>
+    </div>
+        
+</body>
+</html>

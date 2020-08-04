@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        body{
+            height: 8000px;
+        }
+        .container{
+            position: relative;
+            background: orchid;
+            height: 500px;
+            width:500px;
+            /* if i add z-index:2; here then since 2 is greater than 1 hence it will then display container in front */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #box-1{
+            /* By default it is static */
+            /* Absolute positiion changes according to parent element */
+
+            background: red;
+            position: relative;
+            top:50px;
+            left: 100px;
+            /* this property makes the red box in front*/
+            /* higher the value of the z-index more it will give preference to */
+            z-index: 1;
+        }
+        #box-2{
+            background: yellow;
+            position: absolute;
+            top:50px;
+            left: 100px;
+        }
+        #box-3{
+            background: green;
+            position: absolute;
+            bottom:50px;
+            right: 100px;
+        }
+        #box-4{
+            background: blue;
+            /* this will makes the box fixed we can use this for some important add */
+            position: fixed;
+        }
+        #box-5{
+            background: orangered;
+            /* sticky position is used for something that we always want on the top or at some fixed position
+            if we are scrolling the website this we can use for navigation bar aur menu */
+            position: sticky;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+</html>

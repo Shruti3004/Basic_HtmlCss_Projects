@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model/Margin and Padding</title>
+    <style>
+        /* CSS reset */
+        /* '*' sign represents whole document (browser provides some default settings to change that ) */
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* box wwidth is 500px but if we do padding then box width becomes 520px but in general we dont want that thats why we add box sizing */
+            box-sizing: border-box;
+        }
+        .box{
+            background: lightgray;
+            border:palevioletred solid 3px;
+            width:500px;
+            /* Padding on all sides */
+            padding: 20px;
+            /* Padding per side (the below commands will overwrite the above commands) */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            /* Padding Shorthand- top,right,bottom,left */
+            padding: 10px 20px 10px 20px;
+            /* we can make even this shorter padding shorthand- top/bottom, left/right */
+            padding: 10px 20px;
+            
+            /* Margin on all sides */
+            margin:20px;
+            /* margin per side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            /* margin Shorthand- top,right,bottom,left */
+            margin: 10px 20px 10px 20px;
+            /* we can make even this shorter margin shorthand- top/bottom, left/right */
+            margin: 10px 20px;
+        }
+        .box h3{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium deserunt animi harum amet temporibus assumenda, iure nobis voluptate provident fuga!</p>
+    </div>
+    <div class="box">
+        <h3>Box two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium deserunt animi harum amet temporibus assumenda, iure nobis voluptate provident fuga!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background: #333 url('C:\Users\PC\Desktop\CSS  Sandbox\Images\maxresdefault.jpg') no-repeat center center/cover;
+            color:white;
+            /* if we write only above that two steps then color is onlyy behind the text but if we want color on the whole screen than for that we use vh */
+            /* in total the screen is divided into 100 slices for the height it is divided into 100 vertical slices and for width it is divided into 100 horizontal slices */
+            height: 100vh;
+            padding: 15rem;
+            text-align: center;
+        }
+        header h1{
+            font-size: 60px;
+        }
+        header p{
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our website</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quisquam magnam dicta nemo quidem modi?</p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+</body>
+</html>

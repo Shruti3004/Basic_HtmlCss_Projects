@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float align</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            /* sets the width of the box */
+            /* if we wwill shifts the browser screen to then it will even hides the text and scroll bar will come so for that we will use maax-width   */
+            max-width: 960px;
+            /* auto shifts the text to center */
+            margin:40px auto;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        .box{
+            border:purple 3px solid;
+            background: silver; 
+            padding:20px;
+            margin-bottom: 10px;
+        }
+        .box p{
+            text-align: left;
+            text-align: right;
+            text-align: center;
+        }
+        #box-2{
+            float:left;
+            width: 68%;
+        }
+        #box-3{
+            float:right;
+            width: 30%;
+        }
+        .clr{
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box-1" class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt molestias accusantium dolores quisquam facilis voluptas odit obcaecati pariatur possimus. Nihil?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt molestias accusantium dolores quisquam facilis voluptas odit obcaecati pariatur possimus. Nihil?</p>
+        </div>
+        <div id="box-3" class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt molestias accusantium dolores quisquam facilis voluptas odit obcaecati pariatur possimus. Nihil?</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt molestias accusantium dolores quisquam facilis voluptas odit obcaecati pariatur possimus. Nihil?</p>
+        </div>
+        
+    </div>
+
+        
+</body>
+</html>
