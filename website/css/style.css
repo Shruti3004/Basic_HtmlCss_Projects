@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    background: url('../img/pattern.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background: black !important;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    padding: 16px;
+    align-items: center;
+}  
+#navbar .headi{
+    color: rgba(255,0,0,0.7);
+}  
+#navbar ul{
+    list-style: none;
+    display: flex;
+ 
+}
+#navbar ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    background: rgba(255,0,0,0.4);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#showcase{
+    background: url('../img/building-1.jpeg') no-repeat center center/cover;
+    height: 92vh;
+    color: white;
+    
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    background-image: linear-gradient(to bottom right,rgba(255,0,0,0.4), rgba(0,0,0,.7),rgba(0,0,0,0.7));
+}
+#showcase p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.text-primary{
+    font-size: 40px;
+    padding-bottom:10px ;
+}
+#sect{
+    text-align: center;
+    margin:auto;
+}
+#sect h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#sect p{
+    margin-bottom: 50px;
+}
+#sect1 .icons{
+    color: rgba(235, 6, 6, 0.781);
+    padding-bottom: 20px;
+}
+#sect1 .box{
+    background: white;
+    text-align: center;
+    padding: 50px ;
+    float: right;
+    width: 31.3%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0,0,0,0.7);
+}
+#section-2{
+    background: url('../img/building-1.jpeg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+#section-2 .sect2-image{
+    position: absolute;
+    top:200vh;
+    left: 0;
+    right: 0;
+    background: rgba(255,0,0,0.4);
+    padding: 50px;
+}
+#section-2 h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: rgb(238, 225, 225);
+}
+#section-2 p{
+    font-size: 20px;
+}
